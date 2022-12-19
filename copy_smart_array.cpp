@@ -14,11 +14,18 @@ int main()
 		arr.add(4);
 		arr.add(155);
 		arr.print("arr");
+		arr = arr;
+		arr.print("arr");
 
 		SmartArr new_array(2);
 		new_array.add(44);
 		new_array.add(34);
 		new_array.print("new_array");
+
+		SmartArr arr2(arr);  //Можно так
+		//SmartArr arr2 = arr; //Или так
+		//arr2.add(20);
+		arr2.print("arr2");
 
 		//new_array = arr;
 		//new_array.print();
